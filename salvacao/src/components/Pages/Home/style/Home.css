@@ -1,0 +1,86 @@
+.card{
+    border: 2px solid rgba(0, 0, 0, 0.849);
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 8px 8px rgba(230, 102, 28, 0.349);
+}
+
+.cardHead, .cardBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 20px 10px 10px 10px;
+    box-shadow: 0 8px rgba(230, 102, 28, 0.349);
+}
+
+.cardHead{
+    border: 2px solid rgba(0, 0, 0, 0.849);
+    height: 30%;
+    background-color: rgba(255, 255, 255, 0.450);
+}
+
+.cardBody{
+    border: 2px solid rgba(0, 0, 0, 0.849);
+    height: 60%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+.cardBody .home h1{
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 800;
+    margin: auto;
+}
+
+.cardBody img{
+    width: 10%;
+    height: 10%;
+    margin: 0 5%;
+}
+
+.home{
+    display: flex;
+    height: 20%;
+}
+
+.description{
+    display: block;
+    height: 80%;
+}
+
+
+.description p {
+    margin: 10% 10%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.cardHead img{
+    width: 35%;
+    height: 100%;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width: 1080px){
+    .cardHead img{
+        width: 65%;
+    }
+
+}
+
+@media screen and (max-width: 720px){
+    .cardHead img{
+        width: 100%;
+    }
+
+    .cardBody{
+        height: 55%;
+    }
+}
